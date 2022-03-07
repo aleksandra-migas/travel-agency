@@ -1,0 +1,943 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------- Strat of navbar-------------*/
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(116, 123, 131, 0.3),
+      rgb(116, 123, 131, 0.3)
+    ),
+    url(img/gergeti2.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*transition: 0.5s;*/
+  background-color: rgb(4, 51, 87);
+  z-index: 9999;
+  height: clamp(4rem, 8vh, 4rem);
+}
+
+.logo-box {
+  display: flex;
+  margin-left: 1rem;
+  color: #fff;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.3rem;
+  color: #fff;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.fab {
+  font-size: 1.5rem;
+  color: white;
+  gap: 1rem;
+  padding-left: 1.5rem;
+}
+.fa-instagram {
+  padding-left: 3rem;
+}
+
+.burger-button-box {
+  justify-items: center;
+}
+
+.burger-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 18px;
+}
+
+.burger-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/*-------------Header---------------*/
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.header-text h5 {
+  text-transform: uppercase;
+  letter-spacing: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.header-text h1 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 1.5rem;
+}
+
+.header-text p {
+  padding-top: 5vh;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.offer-button {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(136, 22, 22);
+  padding: 1rem 2rem;
+  top: 4rem;
+  font-size: 1rem;
+}
+/*-----------END OF HEADER-------------*/
+.introduction {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.introduction h1 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+  color: rgb(4, 51, 87);
+}
+.introduction p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(64, 59, 42);
+}
+
+.introduction h2 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: rgb(64, 59, 42);
+}
+
+/*------------- OFFER CARDS-------------------*/
+.trip-offer-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 0.5rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img1 {
+  background-image: url(img/gergeti3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.card-img2 {
+  background-image: url(img/gudauri.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.card-img3 {
+  background-image: url(img/tusheti.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.card-img4 {
+  background-image: url(img/wine.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.card-img5 {
+  background-image: url(img/offroad.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.card-img6 {
+  background-image: url(img/trekking.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.card-title {
+  color: #fff;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  bottom: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+}
+.card-title h3 {
+  background-color: rgb(136, 22, 22);
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.card-title p {
+  background-color: rgb(165, 73, 73);
+}
+
+.tailor-made-holidays {
+  background-color: rgb(236, 230, 213);
+}
+
+.tailor-made-holidays h3 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: rgb(64, 59, 42);
+  text-transform: uppercase;
+}
+
+.tailor-made-holidays p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgb(64, 59, 42);
+}
+
+.plan-your-trip {
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 1rem;
+  justify-content: center;
+  color: rgb(64, 59, 42);
+}
+
+.plan-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.plan-col .number {
+  font-size: 3rem;
+}
+
+.plan-col .plan-title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.plan-col .plan-details {
+  font-size: 1rem;
+  padding-top: 2rem;
+}
+
+.tailor-made-holidays h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  color: rgb(4, 51, 87);
+  text-align: center;
+}
+
+.tailor-made-holidays p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgb(64, 59, 42);
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.contact-button-box {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(136, 22, 22);
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+}
+/*-----------------WHY US SECTION-----------*/
+.why-us {
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  color: rgb(4, 51, 87);
+}
+
+.why-us p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(64, 59, 42);
+  text-transform: uppercase;
+}
+
+.experiences-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  gap: 3rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.experiences-col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.experiences-text h2 {
+  font-size: 1.3rem;
+  color: rgb(64, 59, 42);
+  text-transform: uppercase;
+  padding-top: 2rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+.experiences-text p {
+  font-size: 1rem;
+  color: rgb(64, 59, 42);
+  font-weight: 400;
+}
+
+.experiences-img-1 {
+  background-image: url(img/wine-tasting.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.experiences-img-2 {
+  background-image: url(img/family-time.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.experiences-img-3 {
+  background-image: url(img/local-market.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+.experiences-img-4 {
+  background-image: url(img/khachapuri2.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 40vh;
+}
+
+.experiences-img-5 {
+  background-image: url(img/guide.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.experiences-img-6 {
+  background-image: url(img/bakery.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.fas {
+  font-size: 3rem;
+  color: rgb(64, 59, 42);
+}
+
+/*---------FOOTER------------*/
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  background-color: rgb(4, 51, 87);
+  color: #fff;
+}
+
+.footer-logo-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer-logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-top: solid;
+  border-bottom: solid;
+  padding: 1rem 1 rem;
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.footer-contact .fa-envelope,
+.fa-mobile-alt {
+  font-size: 1.5rem;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 1150px) {
+  .trip-offer-wrapper {
+    grid-template-columns: repeat(auto-fill, 300px);
+    margin: 1rem;
+  }
+  .card-img1,
+  .card-img2,
+  .card-img3,
+  .card-img4,
+  .card-img5,
+  .card-img6 {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    max-height: 7vh;
+  }
+
+  .burger-button {
+    display: flex;
+    right: 2rem;
+    z-index: 9999;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: rgb(4, 51, 87);
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    margin-right: 0;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    top: 5vh;
+  }
+
+  .nav-links ul li {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .nav-links ul li a {
+    font-size: 1.5rem;
+  }
+
+  .nav-links .fab {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .header-text h5 {
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .header-text h1 {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+  }
+
+  .header-text p {
+    padding-top: 5vh;
+    font-size: 1.2rem;
+  }
+
+  .introduction {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .trip-offer-wrapper {
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .card {
+    max-height: 350px;
+  }
+
+  .experiences-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .fas {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-box {
+    align-items: center;
+  }
+
+  .burger-button {
+    display: flex;
+    margin-right: 0.2rem;
+  }
+
+  .introduction {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .introduction h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+  .introduction p {
+    font-size: 1rem;
+  }
+  .introduction h2 {
+    font-size: 1rem;
+  }
+
+  .tailor-made-holidays h2 {
+    font-size: 2rem;
+  }
+  .tailor-made-holidays p {
+    padding-bottom: 1rem;
+  }
+
+  .why-us {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .why-us h2 {
+    font-size: 2rem;
+  }
+
+  .footer-wrapper {
+    gap: 1rem;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .footer-contact .fa-envelope,
+  .fa-mobile-alt {
+    font-size: 1rem;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-contact .fab {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header-text h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .trip-offer-wrapper {
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card {
+    max-height: 300px;
+  }
+
+  .introduction {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+  }
+
+  .introduction h1 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .introduction p {
+    font-size: 0.85rem;
+  }
+  .introduction h2 {
+    font-size: 0.85rem;
+  }
+
+  .tailor-made-holidays h2 {
+    font-size: 1.5rem;
+  }
+  .tailor-made-holidays p {
+    padding-bottom: 1rem;
+  }
+
+  .why-us {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+
+  .why-us h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/*-----------CONTACT PAGE------------*/
+
+.header-2 {
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(116, 123, 131, 0.3),
+      rgb(116, 123, 131, 0.3)
+    ),
+    url(img/gergeti4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.contact-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.contact-text-box h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 600px);
+  margin-left: 5rem;
+  margin-top: 2rem;
+  color: rgb(64, 59, 42);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.message-us {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.input-group {
+  padding-bottom: 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: rgb(223, 220, 220);
+  border: none;
+  padding: 0.8rem;
+  /* width: 600px;*/
+  outline: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.send-btn {
+  margin-bottom: 2rem;
+}
+.send-btn #sendButton {
+  background-color: rgb(136, 22, 22);
+  width: 600px;
+  padding: 0.8rem;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+/*.active,
+#sendButton:hover {
+  background-color: rgb(95, 9, 9);
+}*/
+
+.contact-inf {
+  margin-left: 5rem;
+  margin-top: 10rem;
+}
+.inf-line {
+  display: flex;
+}
+
+.contact-inf .fa-mobile-alt {
+  color: rgb(136, 22, 22);
+  font-size: 2rem;
+}
+
+.contact-inf .fa-envelope {
+  color: rgb(136, 22, 22);
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.inf-line {
+  padding-bottom: 2rem;
+}
+/*----------------------------------------------------------*/
+
+@media screen and (max-width: 1285px) {
+  .contact-wrapper {
+    grid-template-columns: repeat(auto-fill, 500px);
+    justify-content: center;
+    margin-left: 2rem;
+  }
+
+  .send-btn #sendButton {
+    width: 500px;
+  }
+
+  .contact-inf {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1035px) {
+  .contact-wrapper {
+    grid-template-columns: repeat(auto-fill, 350px);
+    justify-content: center;
+  }
+
+  .send-btn #sendButton {
+    width: 350px;
+  }
+
+  .contact-inf {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contact-wrapper {
+    grid-template-columns: repeat(auto-fill, 450px);
+    justify-content: center;
+    margin-left: 0.5rem;
+  }
+
+  .send-btn #sendButton {
+    width: 450px;
+  }
+
+  .contact-inf {
+    margin-top: 2rem;
+  }
+
+  .contact-inf .fa-mobile-alt {
+    margin-left: 2rem;
+  }
+
+  .footer-wrapper {
+    gap: 0.85rem;
+  }
+
+  .footer-contact .fa-envelope,
+  .fa-mobile-alt {
+    font-size: 1rem;
+    color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .footer-contact .fa-instagram {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .footer-contact .fa-facebook {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .contact-wrapper {
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    margin-left: 0.3rem;
+  }
+
+  .send-btn #sendButton {
+    width: 300px;
+  }
+
+  .contact-inf {
+    margin-top: 1rem;
+  }
+}

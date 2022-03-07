@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-5 {
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(116, 123, 131, 0.3),
+      rgb(116, 123, 131, 0.3)
+    ),
+    url(img/mestia.jpg);
+  object-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*transition: 0.5s;*/
+  background-color: rgb(4, 51, 87);
+  z-index: 9999;
+  height: clamp(4rem, 8vh, 4rem);
+}
+
+.logo-box {
+  display: flex;
+  margin-left: 1rem;
+  color: #fff;
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.3rem;
+  color: #fff;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 300;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.fab {
+  font-size: 1.5rem;
+  color: white;
+  gap: 1rem;
+  padding-left: 1.5rem;
+}
+.fa-instagram {
+  padding-left: 3rem;
+}
+
+.burger-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 18px;
+}
+
+.burger-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.explore-text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.explore-text-box h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.about-georgia-text {
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  color: rgb(64, 59, 42);
+  font-size: 1.2rem;
+}
+
+/*----------------------IMAGE SLIDER-----------------------*/
+.gallery-container {
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-slider {
+  display: flex;
+  width: 100%;
+  height: 420px;
+}
+
+#backBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  left: 2%;
+  font-size: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  right: 2%;
+  font-size: 50px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: rgb(4, 51, 87);
+  text-align: center;
+  font-weight: 200;
+}
+
+.top-places-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 2rem;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.visit-card {
+  flex-direction: column;
+  color: rgb(64, 59, 42);
+}
+
+.img-vistit1 {
+  background-image: url(img/stepantsminda.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+.img-vistit2 {
+  background-image: url(img/tusheti2.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+.img-vistit3 {
+  background-image: url(img/tbilisi2.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+.img-vistit4 {
+  background-image: url(img/svaneti2.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+.img-vistit5 {
+  background-image: url(img/vardzia.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+.img-vistit6 {
+  background-image: url(img/martvili.jpg);
+  background-size: cover;
+  height: 30vh;
+}
+
+.visit-text p {
+  padding-top: 0.5rem;
+}
+/*----------------------------FOOTER------------------------*/
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  background-color: rgb(4, 51, 87);
+  color: #fff;
+}
+
+.footer-logo-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.footer-logo {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-top: solid;
+  border-bottom: solid;
+  padding: 1rem 1 rem;
+  color: #fff;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 300;
+  padding: 1rem;
+}
+
+.footer-contact .fa-envelope,
+.fa-mobile-alt {
+  font-size: 1.5rem;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    max-height: 7vh;
+  }
+
+  .burger-button {
+    display: flex;
+    right: 2rem;
+    z-index: 9999;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: rgb(4, 51, 87);
+    height: 100vh;
+    width: 100%;
+    right: 0;
+    margin-right: 0;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+    top: 5vh;
+  }
+
+  .nav-links ul li {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .nav-links ul li a {
+    font-size: 1.5rem;
+  }
+
+  .nav-links .fab {
+    margin-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .gallery-container {
+    width: 60%;
+  }
+
+  .gallery-slider {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-slider {
+    height: 250px;
+  }
+
+  .gallery-container {
+    width: 350px;
+  }
+
+  .img-vistit1,
+  .img-vistit2,
+  .img-vistit3,
+  .img-vistit4,
+  .img-vistit5,
+  .img-vistit6 {
+    height: 20vh;
+  }
+
+  .footer-wrapper {
+    gap: 1rem;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .footer-contact .fa-envelope,
+  .fa-mobile-alt {
+    font-size: 1rem;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footer-contact .fab {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
+  }
+}
