@@ -26,7 +26,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  /*transition: 0.5s;*/
   background-color: rgb(4, 51, 87);
   z-index: 9999;
   height: clamp(4rem, 8vh, 4rem);
@@ -87,7 +86,7 @@ nav {
 
 .burger-button {
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
   right: 3rem;
   display: none;
   flex-direction: column;

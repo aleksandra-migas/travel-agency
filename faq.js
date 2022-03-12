@@ -7,10 +7,10 @@ burgerButton.addEventListener('click', () => {
 
 
 
-window.addEventListener('scroll', (event) => {
+/*window.addEventListener('scroll', (event) => {
     const nav = document.querySelector('nav');
     nav.classList.toggle('sticky', window.scrollY > 0);
-});
+});*/
 
 
 

@@ -1,3 +1,11 @@
+const burgerButton = document.getElementsByClassName('burger-button')[0]
+const navLinks = document.getElementsByClassName('nav-links')[0]
+
+burgerButton.addEventListener('click', () => {
+    navLinks.classList.toggle('active')
+})
+
+
 const gallerySlider = document.querySelector('.gallery-slider');
 const galleryImages = document.querySelectorAll('.gallery-slider img');
 

@@ -93,7 +93,7 @@ nav {
 
 .burger-button {
   position: absolute;
-  top: 1.5rem;
+  top: 1rem;
   right: 3rem;
   display: none;
   flex-direction: column;
@@ -506,10 +506,9 @@ nav {
   font-weight: 300;
 }
 
-@media screen and (max-width: 1150px) {
+/@media screen and (max-width: 1450px) {
   .trip-offer-wrapper {
-    grid-template-columns: repeat(auto-fill, 300px);
-    margin: 1rem;
+    grid-template-columns: repeat(auto-fill, 600px);
   }
   .card-img1,
   .card-img2,
@@ -517,427 +516,441 @@ nav {
   .card-img4,
   .card-img5,
   .card-img6 {
-    height: 30vh;
+    height: 50vh;
   }
 }
-
-@media screen and (max-width: 768px) {
-  nav {
-    max-height: 7vh;
-  }
-
-  .burger-button {
-    display: flex;
-    right: 2rem;
-    z-index: 9999;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .nav-links {
-    position: absolute;
-    background-color: rgb(4, 51, 87);
-    height: 100vh;
-    width: 100%;
-    right: 0;
-    margin-right: 0;
-    justify-content: center;
-    text-align: center;
-    z-index: 2;
-    top: 5vh;
-  }
-
-  .nav-links ul li {
-    display: block;
-    margin-top: 3rem;
-  }
-
-  .nav-links ul li a {
-    font-size: 1.5rem;
-  }
-
-  .nav-links .fab {
-    margin-top: 3rem;
-    font-size: 2rem;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .header-text h5 {
-    letter-spacing: 0.5rem;
-    font-size: 1rem;
-  }
-
-  .header-text h1 {
-    font-size: 3rem;
-    letter-spacing: 1rem;
-  }
-
-  .header-text p {
-    padding-top: 5vh;
-    font-size: 1.2rem;
-  }
-
-  .introduction {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
+@media screen and (max-width: 1350px) {
   .trip-offer-wrapper {
-    grid-template-columns: repeat(auto-fill, 300px);
-    gap: 2rem;
-    margin: 1rem;
+    grid-template-columns: repeat(auto-fill, 350px);
   }
 
-  .card {
-    max-height: 350px;
+  @media screen and (max-width: 1150px) {
+    .trip-offer-wrapper {
+      grid-template-columns: repeat(auto-fill, 300px);
+      margin: 1rem;
+    }
+    .card-img1,
+    .card-img2,
+    .card-img3,
+    .card-img4,
+    .card-img5,
+    .card-img6 {
+      height: 30vh;
+    }
   }
 
-  .experiences-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    gap: 2rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    justify-content: center;
+  @media screen and (max-width: 768px) {
+    nav {
+      max-height: 7vh;
+    }
+
+    .burger-button {
+      display: flex;
+      right: 2rem;
+      z-index: 9999;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-links {
+      position: absolute;
+      background-color: rgb(4, 51, 87);
+      height: 100vh;
+      width: 100%;
+      right: 0;
+      margin-right: 0;
+      justify-content: center;
+      text-align: center;
+      z-index: 2;
+      top: 5vh;
+    }
+
+    .nav-links ul li {
+      display: block;
+      margin-top: 3rem;
+    }
+
+    .nav-links ul li a {
+      font-size: 1.5rem;
+    }
+
+    .nav-links .fab {
+      margin-top: 3rem;
+      font-size: 2rem;
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .header-text h5 {
+      letter-spacing: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .header-text h1 {
+      font-size: 3rem;
+      letter-spacing: 1rem;
+    }
+
+    .header-text p {
+      padding-top: 5vh;
+      font-size: 1.2rem;
+    }
+
+    .introduction {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .trip-offer-wrapper {
+      grid-template-columns: repeat(auto-fill, 300px);
+      gap: 2rem;
+      margin: 1rem;
+    }
+
+    .card {
+      max-height: 350px;
+    }
+
+    .experiences-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 300px);
+      gap: 2rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+
+    .fas {
+      font-size: 2rem;
+    }
   }
 
-  .fas {
-    font-size: 2rem;
-  }
-}
+  @media screen and (max-width: 480px) {
+    .logo-box {
+      align-items: center;
+    }
 
-@media screen and (max-width: 480px) {
-  .logo-box {
-    align-items: center;
+    .burger-button {
+      display: flex;
+      margin-right: 0.2rem;
+    }
+
+    .introduction {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      text-align: center;
+    }
+
+    .introduction h1 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+    .introduction p {
+      font-size: 1rem;
+    }
+    .introduction h2 {
+      font-size: 1rem;
+    }
+
+    .tailor-made-holidays h2 {
+      font-size: 2rem;
+    }
+    .tailor-made-holidays p {
+      padding-bottom: 1rem;
+    }
+
+    .why-us {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      text-align: center;
+    }
+
+    .why-us h2 {
+      font-size: 2rem;
+    }
+
+    .footer-wrapper {
+      gap: 1rem;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    .footer-contact .fa-envelope,
+    .fa-mobile-alt {
+      font-size: 1rem;
+      color: white;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .footer-contact .fab {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      padding-bottom: 1rem;
+    }
   }
 
-  .burger-button {
-    display: flex;
-    margin-right: 0.2rem;
+  @media screen and (max-width: 360px) {
+    .header-text h1 {
+      text-transform: uppercase;
+      font-size: 3rem;
+      letter-spacing: 0.5rem;
+    }
+
+    .trip-offer-wrapper {
+      grid-template-columns: repeat(auto-fill, 300px);
+      gap: 1rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card {
+      max-height: 300px;
+    }
+
+    .introduction {
+      margin-top: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      text-align: center;
+    }
+
+    .introduction h1 {
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+    }
+    .introduction p {
+      font-size: 0.85rem;
+    }
+    .introduction h2 {
+      font-size: 0.85rem;
+    }
+
+    .tailor-made-holidays h2 {
+      font-size: 1.5rem;
+    }
+    .tailor-made-holidays p {
+      padding-bottom: 1rem;
+    }
+
+    .why-us {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      text-align: center;
+    }
+
+    .why-us h2 {
+      font-size: 1.5rem;
+    }
   }
 
-  .introduction {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+  /*-----------CONTACT PAGE------------*/
+
+  .header-2 {
+    min-height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(116, 123, 131, 0.3),
+        rgb(116, 123, 131, 0.3)
+      ),
+      url(img/gergeti4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .contact-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
     text-align: center;
   }
 
-  .introduction h1 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-  }
-  .introduction p {
-    font-size: 1rem;
-  }
-  .introduction h2 {
-    font-size: 1rem;
-  }
-
-  .tailor-made-holidays h2 {
-    font-size: 2rem;
-  }
-  .tailor-made-holidays p {
-    padding-bottom: 1rem;
-  }
-
-  .why-us {
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-align: center;
-  }
-
-  .why-us h2 {
-    font-size: 2rem;
-  }
-
-  .footer-wrapper {
-    gap: 1rem;
-  }
-
-  .footer-contact {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 0.85rem;
-  }
-
-  .footer-contact .fa-envelope,
-  .fa-mobile-alt {
-    font-size: 1rem;
-    color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .footer-contact .fab {
-    padding-right: 3rem;
-    padding-left: 3rem;
-    padding-bottom: 1rem;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .header-text h1 {
+  .contact-text-box h1 {
     text-transform: uppercase;
     font-size: 3rem;
-    letter-spacing: 0.5rem;
+    font-weight: 200;
   }
 
-  .trip-offer-wrapper {
-    grid-template-columns: repeat(auto-fill, 300px);
-    gap: 1rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .card {
-    max-height: 300px;
-  }
-
-  .introduction {
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 600px);
+    margin-left: 5rem;
     margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    text-align: center;
+    color: rgb(64, 59, 42);
   }
 
-  .introduction h1 {
-    font-size: 1.5rem;
+  #form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message-us {
     padding-bottom: 1rem;
-  }
-  .introduction p {
-    font-size: 0.85rem;
-  }
-  .introduction h2 {
-    font-size: 0.85rem;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
   }
 
-  .tailor-made-holidays h2 {
-    font-size: 1.5rem;
-  }
-  .tailor-made-holidays p {
+  .input-group {
     padding-bottom: 1rem;
   }
 
-  .why-us {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: center;
+  input,
+  textarea {
+    width: 100%;
+    background-color: rgb(223, 220, 220);
+    border: none;
+    padding: 0.8rem;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1rem;
   }
 
-  .why-us h2 {
-    font-size: 1.5rem;
+  .send-btn {
+    margin-bottom: 2rem;
   }
-}
-
-/*-----------CONTACT PAGE------------*/
-
-.header-2 {
-  min-height: 60vh;
-  width: 100%;
-  background-image: linear-gradient(
-      rgba(116, 123, 131, 0.3),
-      rgb(116, 123, 131, 0.3)
-    ),
-    url(img/gergeti4.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-
-.contact-text-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-}
-
-.contact-text-box h1 {
-  text-transform: uppercase;
-  font-size: 3rem;
-  font-weight: 200;
-}
-
-.contact-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 600px);
-  margin-left: 5rem;
-  margin-top: 2rem;
-  color: rgb(64, 59, 42);
-}
-
-#form {
-  display: flex;
-  flex-direction: column;
-}
-
-.message-us {
-  padding-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.input-group {
-  padding-bottom: 1rem;
-}
-
-input,
-textarea {
-  width: 100%;
-  background-color: rgb(223, 220, 220);
-  border: none;
-  padding: 0.8rem;
-  /* width: 600px;*/
-  outline: none;
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-.send-btn {
-  margin-bottom: 2rem;
-}
-.send-btn #sendButton {
-  background-color: rgb(136, 22, 22);
-  width: 600px;
-  padding: 0.8rem;
-  color: #fff;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-}
-
-/*.active,
-#sendButton:hover {
-  background-color: rgb(95, 9, 9);
-}*/
-
-.contact-inf {
-  margin-left: 5rem;
-  margin-top: 10rem;
-}
-.inf-line {
-  display: flex;
-}
-
-.contact-inf .fa-mobile-alt {
-  color: rgb(136, 22, 22);
-  font-size: 2rem;
-}
-
-.contact-inf .fa-envelope {
-  color: rgb(136, 22, 22);
-  font-size: 2rem;
-  padding-left: 2rem;
-  padding-right: 1rem;
-}
-
-.inf-line {
-  padding-bottom: 2rem;
-}
-/*----------------------------------------------------------*/
-
-@media screen and (max-width: 1285px) {
-  .contact-wrapper {
-    grid-template-columns: repeat(auto-fill, 500px);
-    justify-content: center;
-    margin-left: 2rem;
-  }
-
   .send-btn #sendButton {
-    width: 500px;
+    background-color: rgb(136, 22, 22);
+    width: 600px;
+    padding: 0.8rem;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
   }
 
   .contact-inf {
-    margin-right: 2rem;
+    margin-left: 5rem;
+    margin-top: 10rem;
   }
-}
-
-@media screen and (max-width: 1035px) {
-  .contact-wrapper {
-    grid-template-columns: repeat(auto-fill, 350px);
-    justify-content: center;
-  }
-
-  .send-btn #sendButton {
-    width: 350px;
-  }
-
-  .contact-inf {
-    margin-left: 2rem;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .contact-wrapper {
-    grid-template-columns: repeat(auto-fill, 450px);
-    justify-content: center;
-    margin-left: 0.5rem;
-  }
-
-  .send-btn #sendButton {
-    width: 450px;
-  }
-
-  .contact-inf {
-    margin-top: 2rem;
+  .inf-line {
+    display: flex;
   }
 
   .contact-inf .fa-mobile-alt {
-    margin-left: 2rem;
+    color: rgb(136, 22, 22);
+    font-size: 2rem;
   }
 
-  .footer-wrapper {
-    gap: 0.85rem;
-  }
-
-  .footer-contact .fa-envelope,
-  .fa-mobile-alt {
-    font-size: 1rem;
-    color: white;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .footer-contact .fa-instagram {
+  .contact-inf .fa-envelope {
+    color: rgb(136, 22, 22);
+    font-size: 2rem;
+    padding-left: 2rem;
     padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 0.85rem;
   }
 
-  .footer-contact .fa-facebook {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 0.85rem;
+  .inf-line {
+    padding-bottom: 2rem;
   }
-}
+  /*----------------------------------------------------------*/
 
-@media screen and (max-width: 510px) {
-  .contact-wrapper {
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-    margin-left: 0.3rem;
+  @media screen and (max-width: 1285px) {
+    .contact-wrapper {
+      grid-template-columns: repeat(auto-fill, 500px);
+      justify-content: center;
+      margin-left: 2rem;
+    }
+
+    .send-btn #sendButton {
+      width: 500px;
+    }
+
+    .contact-inf {
+      margin-right: 2rem;
+    }
   }
 
-  .send-btn #sendButton {
-    width: 300px;
+  @media screen and (max-width: 1035px) {
+    .contact-wrapper {
+      grid-template-columns: repeat(auto-fill, 350px);
+      justify-content: center;
+    }
+
+    .send-btn #sendButton {
+      width: 350px;
+    }
+
+    .contact-inf {
+      margin-left: 2rem;
+    }
   }
 
-  .contact-inf {
-    margin-top: 1rem;
+  @media screen and (max-width: 760px) {
+    .contact-wrapper {
+      grid-template-columns: repeat(auto-fill, 450px);
+      justify-content: center;
+      margin-left: 0.5rem;
+    }
+
+    .send-btn #sendButton {
+      width: 450px;
+    }
+
+    .contact-inf {
+      margin-top: 2rem;
+    }
+
+    .contact-inf .fa-mobile-alt {
+      margin-left: 2rem;
+    }
+
+    .footer-wrapper {
+      gap: 0.85rem;
+    }
+
+    .footer-contact .fa-envelope,
+    .fa-mobile-alt {
+      font-size: 1rem;
+      color: white;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .footer-contact .fa-instagram {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 0.85rem;
+    }
+
+    .footer-contact .fa-facebook {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 0.85rem;
+    }
+  }
+
+  @media screen and (max-width: 510px) {
+    .contact-wrapper {
+      grid-template-columns: repeat(auto-fill, 300px);
+      justify-content: center;
+      margin-left: 0.3rem;
+    }
+
+    .send-btn #sendButton {
+      width: 300px;
+    }
+
+    .contact-inf {
+      margin-top: 1rem;
+    }
   }
 }
