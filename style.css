@@ -492,8 +492,8 @@ nav {
 .fa-mobile-alt {
   font-size: 1.5rem;
   color: white;
-  padding-left: 2rem;
-  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
 }
 
 .footer-contact {
@@ -692,12 +692,28 @@ nav {
   .introduction h2 {
     font-size: 1rem;
   }
+  .trip-offer-wrapper {
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
 
+  .card {
+    max-height: 250px;
+  }
+
+  .experiences-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+  }
   .tailor-made-holidays h2 {
     font-size: 2rem;
   }
   .tailor-made-holidays p {
     padding-bottom: 1rem;
+  }
+  .plan-your-trip {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    grid-template-columns: repeat(auto-fill, 300px);
   }
 
   .why-us {
@@ -709,6 +725,18 @@ nav {
 
   .why-us h2 {
     font-size: 2rem;
+  }
+  .why-us p {
+    font-size: 1rem;
+  }
+
+  .experiences-img-1,
+  .experiences-img-2,
+  .experiences-img-3,
+  .experiences-img-4,
+  .experiences-img-5,
+  .experiences-img-6 {
+    height: 25vh;
   }
 
   .footer-wrapper {
@@ -957,18 +985,6 @@ textarea {
     color: white;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  .footer-contact .fa-instagram {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 0.85rem;
-  }
-
-  .footer-contact .fa-facebook {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 0.85rem;
   }
 }
 
