@@ -3,7 +3,7 @@ const navLinks = document.getElementsByClassName('nav-links')[0]
 
 burgerButton.addEventListener('click', () => {
     navLinks.classList.toggle('active')
-})
+});
 
 
 

@@ -3,7 +3,7 @@ const navLinks = document.getElementsByClassName('nav-links')[0]
 
 burgerButton.addEventListener('click', () => {
     navLinks.classList.toggle('active')
-})
+});
 
 /*window.addEventListener('scroll', (event) => {
     const nav = document.querySelector('nav');
@@ -60,26 +60,13 @@ alert("Text area cannot be empty")
 form.submit();
 
 }
-//------------------------------------------------------------------------------------------------------
-//const name = document.getElementById('name').value;
-//const surname = document.getElementById('surname').value;
-//const email = document.getElementById('email').value;
-//const message = document.getElementById('message').value;
-//const form = document.getElementById('form').value;
-//const error = document.getElementById('error');
-
-//form.addEventListener('submit', (e) => {
- // e.preventDefault(); 
- 
- // if......tak samoz jak pozyzej
-//})
 
 //------------------FAQ PAGE-----------------------------------
-const accordion = document.getElementsByClassName('container');
+/*const accordion = document.getElementsByClassName('container');
 
 for (i=0; i<accordion.length; i++) {
   accordion[i].addEventListener('click', function () {
     this.classList.toggle('active')
   })
-}
+}*/
 

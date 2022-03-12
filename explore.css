@@ -126,43 +126,17 @@ nav {
 }
 
 /*----------------------IMAGE SLIDER-----------------------*/
-.gallery-container {
-  width: 50%;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
 
 .gallery-slider {
-  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.img-box img {
   width: 100%;
-  height: 420px;
-}
-
-#backBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-  left: 2%;
-  font-size: 50px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  color: #fff;
-}
-
-#nextBtn {
-  position: absolute;
-  top: 50%;
-  z-index: 2;
-  right: 2%;
-  font-size: 50px;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  color: #fff;
+  display: none;
+  height: 400px;
 }
 
 .title h1 {
@@ -190,37 +164,37 @@ nav {
 .img-vistit1 {
   background-image: url(img/stepantsminda.jpg);
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
 }
 
 .img-vistit2 {
   background-image: url(img/tusheti2.jpg);
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
 }
 
 .img-vistit3 {
   background-image: url(img/tbilisi2.jpg);
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
 }
 
 .img-vistit4 {
   background-image: url(img/svaneti2.jpg);
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
 }
 
 .img-vistit5 {
   background-image: url(img/vardzia.jpg);
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
 }
 
 .img-vistit6 {
   background-image: url(img/martvili.jpg);
   background-size: cover;
-  height: 30vh;
+  height: 40vh;
 }
 
 .visit-text p {
@@ -292,7 +266,24 @@ nav {
   font-weight: 300;
 }
 
+@media screen and (max-width: 1600px) {
+  .img-box img {
+    height: 600px;
+  }
+  .top-places-wrapper {
+    grid-template-columns: repeat(auto-fill, 450px);
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .img-box img {
+    height: 450px;
+  }
+}
 @media screen and (max-width: 768px) {
+  .img-box img {
+    height: 250px;
+  }
   nav {
     max-height: 7vh;
   }
@@ -337,25 +328,16 @@ nav {
   .nav-links.active {
     display: flex;
   }
-
-  .gallery-container {
-    width: 60%;
-  }
-
-  .gallery-slider {
-    height: 300px;
-  }
 }
 
 @media screen and (max-width: 500px) {
-  .gallery-slider {
-    height: 250px;
+  .img-box img {
+    height: 200px;
   }
 
-  .gallery-container {
-    width: 350px;
+  .top-places-wrapper {
+    grid-template-columns: repeat(auto-fill, 300px);
   }
-
   .img-vistit1,
   .img-vistit2,
   .img-vistit3,
@@ -366,7 +348,7 @@ nav {
   }
 
   .footer-wrapper {
-    gap: 1rem;
+    gap: 0.85rem;
   }
 
   .footer-contact {
